@@ -534,7 +534,7 @@ class Lys(object):
                 False))
         elif (LysOp.find_op('LYS_OP_UNKNOWN') == op):
             self.state = op
-            self._stateCB(self.state, "The nRF board reported and error.")
+            self._stateCB(self.state, "The nRF board reported an error.")
         elif (LysOp.find_op('LYS_OP_ACK') == op):
             self.is_state('LYS_OP_UNKNOWN')
             self._stateCB(self.state,
